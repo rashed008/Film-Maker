@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		689F6BDE805CAB7607A0DE08 /* Pods_FilmMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D012DE1623E07469DB4EF1 /* Pods_FilmMaker.framework */; };
+		CE36D5DB28F96B2200EBB2A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36D5DA28F96B2200EBB2A2 /* AppDelegate.swift */; };
+		CE36D5DF28F96B2200EBB2A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36D5DE28F96B2200EBB2A2 /* ViewController.swift */; };
+		CE36D5E228F96B2200EBB2A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36D5E028F96B2200EBB2A2 /* Main.storyboard */; };
+		CE36D5E428F96B2500EBB2A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE36D5E328F96B2500EBB2A2 /* Assets.xcassets */; };
+		CE36D5E728F96B2500EBB2A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36D5E528F96B2500EBB2A2 /* LaunchScreen.storyboard */; };
+		CE36D5EF28F97D4700EBB2A2 /* FilmMakerVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36D5EE28F97D4700EBB2A2 /* FilmMakerVideoManager.swift */; };
+		CE36D5F128F97F4000EBB2A2 /* FilmMakerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36D5F028F97F4000EBB2A2 /* FilmMakerExtension.swift */; };
+		CE36D60E28F98C7B00EBB2A2 /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE36D60728F98C7B00EBB2A2 /* silence.mp3 */; };
+		CE36D60F28F98C7B00EBB2A2 /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE36D60828F98C7B00EBB2A2 /* sample.mp3 */; };
+		CE36D61028F98C7B00EBB2A2 /* movie2.mov in Resources */ = {isa = PBXBuildFile; fileRef = CE36D60928F98C7B00EBB2A2 /* movie2.mov */; };
+		CE36D61128F98C7B00EBB2A2 /* movie1.mov in Resources */ = {isa = PBXBuildFile; fileRef = CE36D60A28F98C7B00EBB2A2 /* movie1.mov */; };
+		CE36D61228F98C7B00EBB2A2 /* landscape.MOV in Resources */ = {isa = PBXBuildFile; fileRef = CE36D60B28F98C7B00EBB2A2 /* landscape.MOV */; };
+		CE36D61328F98C7B00EBB2A2 /* portrait.MOV in Resources */ = {isa = PBXBuildFile; fileRef = CE36D60C28F98C7B00EBB2A2 /* portrait.MOV */; };
+		CE36D61428F98C7B00EBB2A2 /* black.mov in Resources */ = {isa = PBXBuildFile; fileRef = CE36D60D28F98C7B00EBB2A2 /* black.mov */; };
+		CE36D61728F9C7FB00EBB2A2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36D61628F9C7FB00EBB2A2 /* Utils.swift */; };
+		CE36D61928F9C95100EBB2A2 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36D61828F9C95100EBB2A2 /* ExtensionUIView.swift */; };
+		CE36D61B28F9CBDC00EBB2A2 /* duck.gif in Resources */ = {isa = PBXBuildFile; fileRef = CE36D61A28F9CBDC00EBB2A2 /* duck.gif */; };
+		CE36D61D28F9CC7F00EBB2A2 /* gifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36D61C28F9CC7F00EBB2A2 /* gifLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25D012DE1623E07469DB4EF1 /* Pods_FilmMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F46AE9FDE6FD4185E7B53C0 /* Pods-FilmMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmMaker.debug.xcconfig"; path = "Target Support Files/Pods-FilmMaker/Pods-FilmMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		5131CC0452582A2D410C3818 /* Pods-FilmMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmMaker.release.xcconfig"; path = "Target Support Files/Pods-FilmMaker/Pods-FilmMaker.release.xcconfig"; sourceTree = "<group>"; };
+		CE36D5D728F96B2200EBB2A2 /* FilmMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE36D5DA28F96B2200EBB2A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE36D5DE28F96B2200EBB2A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE36D5E128F96B2200EBB2A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE36D5E328F96B2500EBB2A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE36D5E628F96B2500EBB2A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE36D5E828F96B2500EBB2A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE36D5EE28F97D4700EBB2A2 /* FilmMakerVideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmMakerVideoManager.swift; sourceTree = "<group>"; };
+		CE36D5F028F97F4000EBB2A2 /* FilmMakerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmMakerExtension.swift; sourceTree = "<group>"; };
+		CE36D60728F98C7B00EBB2A2 /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
+		CE36D60828F98C7B00EBB2A2 /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
+		CE36D60928F98C7B00EBB2A2 /* movie2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie2.mov; sourceTree = "<group>"; };
+		CE36D60A28F98C7B00EBB2A2 /* movie1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie1.mov; sourceTree = "<group>"; };
+		CE36D60B28F98C7B00EBB2A2 /* landscape.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = landscape.MOV; sourceTree = "<group>"; };
+		CE36D60C28F98C7B00EBB2A2 /* portrait.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = portrait.MOV; sourceTree = "<group>"; };
+		CE36D60D28F98C7B00EBB2A2 /* black.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = black.mov; sourceTree = "<group>"; };
+		CE36D61628F9C7FB00EBB2A2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CE36D61828F9C95100EBB2A2 /* ExtensionUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
+		CE36D61A28F9CBDC00EBB2A2 /* duck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = duck.gif; sourceTree = "<group>"; };
+		CE36D61C28F9CC7F00EBB2A2 /* gifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE36D5D428F96B2200EBB2A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689F6BDE805CAB7607A0DE08 /* Pods_FilmMaker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B411855F3DA49095D3E4BE88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F46AE9FDE6FD4185E7B53C0 /* Pods-FilmMaker.debug.xcconfig */,
+				5131CC0452582A2D410C3818 /* Pods-FilmMaker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA8D8BBA76FC9A0691D7D1A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25D012DE1623E07469DB4EF1 /* Pods_FilmMaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE36D5CE28F96B2200EBB2A2 = {
+			isa = PBXGroup;
+			children = (
+				CE36D5D928F96B2200EBB2A2 /* FilmMaker */,
+				CE36D5D828F96B2200EBB2A2 /* Products */,
+				B411855F3DA49095D3E4BE88 /* Pods */,
+				CA8D8BBA76FC9A0691D7D1A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE36D5D828F96B2200EBB2A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE36D5D728F96B2200EBB2A2 /* FilmMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE36D5D928F96B2200EBB2A2 /* FilmMaker */ = {
+			isa = PBXGroup;
+			children = (
+				CE36D60228F98B7900EBB2A2 /* ViewModel */,
+				CE36D60128F98B6100EBB2A2 /* Model */,
+				CE36D60328F98B8600EBB2A2 /* View */,
+				CE36D60428F98B9000EBB2A2 /* Controller */,
+				CE36D60528F98BA600EBB2A2 /* Resources */,
+				CE36D61528F98CE100EBB2A2 /* Extension */,
+				CE36D5DA28F96B2200EBB2A2 /* AppDelegate.swift */,
+				CE36D5E828F96B2500EBB2A2 /* Info.plist */,
+				CE36D60628F98C7B00EBB2A2 /* Sample video */,
+			);
+			path = FilmMaker;
+			sourceTree = "<group>";
+		};
+		CE36D60128F98B6100EBB2A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE36D60228F98B7900EBB2A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE36D60328F98B8600EBB2A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE36D5E028F96B2200EBB2A2 /* Main.storyboard */,
+				CE36D5E528F96B2500EBB2A2 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE36D60428F98B9000EBB2A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE36D5DE28F96B2200EBB2A2 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE36D60528F98BA600EBB2A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE36D61A28F9CBDC00EBB2A2 /* duck.gif */,
+				CE36D61628F9C7FB00EBB2A2 /* Utils.swift */,
+				CE36D5E328F96B2500EBB2A2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE36D60628F98C7B00EBB2A2 /* Sample video */ = {
+			isa = PBXGroup;
+			children = (
+				CE36D60728F98C7B00EBB2A2 /* silence.mp3 */,
+				CE36D60828F98C7B00EBB2A2 /* sample.mp3 */,
+				CE36D60928F98C7B00EBB2A2 /* movie2.mov */,
+				CE36D60A28F98C7B00EBB2A2 /* movie1.mov */,
+				CE36D60B28F98C7B00EBB2A2 /* landscape.MOV */,
+				CE36D60C28F98C7B00EBB2A2 /* portrait.MOV */,
+				CE36D60D28F98C7B00EBB2A2 /* black.mov */,
+			);
+			path = "Sample video";
+			sourceTree = "<group>";
+		};
+		CE36D61528F98CE100EBB2A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE36D61828F9C95100EBB2A2 /* ExtensionUIView.swift */,
+				CE36D5EE28F97D4700EBB2A2 /* FilmMakerVideoManager.swift */,
+				CE36D5F028F97F4000EBB2A2 /* FilmMakerExtension.swift */,
+				CE36D61C28F9CC7F00EBB2A2 /* gifLoader.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE36D5D628F96B2200EBB2A2 /* FilmMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE36D5EB28F96B2500EBB2A2 /* Build configuration list for PBXNativeTarget "FilmMaker" */;
+			buildPhases = (
+				08032FD26A5EE3493DDF2DD4 /* [CP] Check Pods Manifest.lock */,
+				CE36D5D328F96B2200EBB2A2 /* Sources */,
+				CE36D5D428F96B2200EBB2A2 /* Frameworks */,
+				CE36D5D528F96B2200EBB2A2 /* Resources */,
+				5FF7DC19E124CCA86365C006 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilmMaker;
+			productName = FilmMaker;
+			productReference = CE36D5D728F96B2200EBB2A2 /* FilmMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE36D5CF28F96B2200EBB2A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CE36D5D628F96B2200EBB2A2 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CE36D5D228F96B2200EBB2A2 /* Build configuration list for PBXProject "FilmMaker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE36D5CE28F96B2200EBB2A2;
+			productRefGroup = CE36D5D828F96B2200EBB2A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE36D5D628F96B2200EBB2A2 /* FilmMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE36D5D528F96B2200EBB2A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE36D61228F98C7B00EBB2A2 /* landscape.MOV in Resources */,
+				CE36D60E28F98C7B00EBB2A2 /* silence.mp3 in Resources */,
+				CE36D61B28F9CBDC00EBB2A2 /* duck.gif in Resources */,
+				CE36D61128F98C7B00EBB2A2 /* movie1.mov in Resources */,
+				CE36D61328F98C7B00EBB2A2 /* portrait.MOV in Resources */,
+				CE36D61428F98C7B00EBB2A2 /* black.mov in Resources */,
+				CE36D5E728F96B2500EBB2A2 /* LaunchScreen.storyboard in Resources */,
+				CE36D61028F98C7B00EBB2A2 /* movie2.mov in Resources */,
+				CE36D5E428F96B2500EBB2A2 /* Assets.xcassets in Resources */,
+				CE36D5E228F96B2200EBB2A2 /* Main.storyboard in Resources */,
+				CE36D60F28F98C7B00EBB2A2 /* sample.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08032FD26A5EE3493DDF2DD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FilmMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FF7DC19E124CCA86365C006 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FilmMaker/Pods-FilmMaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FilmMaker/Pods-FilmMaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FilmMaker/Pods-FilmMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE36D5D328F96B2200EBB2A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE36D61928F9C95100EBB2A2 /* ExtensionUIView.swift in Sources */,
+				CE36D61D28F9CC7F00EBB2A2 /* gifLoader.swift in Sources */,
+				CE36D61728F9C7FB00EBB2A2 /* Utils.swift in Sources */,
+				CE36D5F128F97F4000EBB2A2 /* FilmMakerExtension.swift in Sources */,
+				CE36D5DF28F96B2200EBB2A2 /* ViewController.swift in Sources */,
+				CE36D5DB28F96B2200EBB2A2 /* AppDelegate.swift in Sources */,
+				CE36D5EF28F97D4700EBB2A2 /* FilmMakerVideoManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE36D5E028F96B2200EBB2A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE36D5E128F96B2200EBB2A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE36D5E528F96B2500EBB2A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE36D5E628F96B2500EBB2A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE36D5E928F96B2500EBB2A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE36D5EA28F96B2500EBB2A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE36D5EC28F96B2500EBB2A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F46AE9FDE6FD4185E7B53C0 /* Pods-FilmMaker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 446HQB2H3T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilmMaker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-FilmMaker.FilmMaker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE36D5ED28F96B2500EBB2A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5131CC0452582A2D410C3818 /* Pods-FilmMaker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 446HQB2H3T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilmMaker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-FilmMaker.FilmMaker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE36D5D228F96B2200EBB2A2 /* Build configuration list for PBXProject "FilmMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE36D5E928F96B2500EBB2A2 /* Debug */,
+				CE36D5EA28F96B2500EBB2A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE36D5EB28F96B2500EBB2A2 /* Build configuration list for PBXNativeTarget "FilmMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE36D5EC28F96B2500EBB2A2 /* Debug */,
+				CE36D5ED28F96B2500EBB2A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE36D5CF28F96B2200EBB2A2 /* Project object */;
+}
